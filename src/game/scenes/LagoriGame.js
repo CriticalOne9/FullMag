@@ -8,14 +8,13 @@ export class LagoriGame extends Phaser.Scene {
     preload() {
         // Load assets
         this.load.image('stone', 'assets/stone.png');
-        this.load.image('background', 'assets/background.png');
+        this.load.image('background', 'assets/bg.png');
         this.load.image('ball', 'assets/ball.png');
         this.load.image('player', 'assets/player.png'); // Player image
         this.load.image('opponent', 'assets/opponent.png'); // Opponent image
     }
 
     create() {
-        // Set up the background
         this.add.image(400, 300, 'background');
 
         // Add player
